@@ -1,0 +1,72 @@
+{
+  "id": "my-module-name",
+  "title": "My Module Title",
+  "description": "Module Description",
+  "authors": [
+    {
+      "name": "Brandin canterbury",
+      "email": "brandincanterbury@gmail.com",
+      "patreon" : "PhoenixModules"
+    }
+  ],
+  "systems": [
+    {
+      "id": "dnd5e",
+      "type": "system",
+      "compatibility": {
+        "minimum": "3.0.0"
+      }
+    }
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "socketlib",
+        "type": "module"
+      }
+    ]
+  },
+  "socket": true,
+  "packs": [
+    {
+      "name": "change-or-remove",
+      "label": "Change Or Remove",
+      "type": "Item",
+      "system": "dnd5e",
+      "banner" : "modules/my-module-name/assets/images/Module Banner.png"
+    }
+  ],
+  "packFolders": [{
+    "name": "Change Or Remove",
+    "sorting": "a",
+    "color": "#000000",
+    "packs": ["change-or-remove"]
+  }],
+  "includes": [
+    "modules/my-module-name/assets/images",
+    "modules/my-module-name/assets/sounds"
+  ],
+  "esmodules": ["scripts/module.js"],
+  "version": "#{VERSION}#",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "12"
+  },
+  "url": "#{URL}#",
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#",
+  "license": "LICENSE",
+  "readme": "README.md",
+  "media": [
+    {
+      "type": "setup",
+      "url": "https://i.imgur.com/Gl0Smdd.png",
+      "thumbnail": ""
+    },
+    {
+      "type": "cover",
+      "url": "https://i.imgur.com/Gl0Smdd.png",
+      "thumbnail": ""
+    }
+  ]
+}

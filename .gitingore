@@ -1,0 +1,8 @@
+﻿/.git/
+/Reference/
+/dist/
+/.idea/
+/.vscode/
+/node_modules/
+yarn.lock
+package-lock.json
