@@ -3,6 +3,7 @@ import { nodeResolve } from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs';
 import { defineConfig } from "vite";
 
+//Other than the commented areas, leave the rest of this alone
 export default defineConfig({
     build: {
         sourcemap: true,
@@ -12,7 +13,8 @@ export default defineConfig({
                 module: "src/module.js",
             },
             output: {
-                entryFileNames: "scripts/module.js", //I prefer renaming this as foundry and the debugger tends to be weird with multiple module.js files
+                //I prefer renaming this as foundry and the debugger tends to be weird with multiple module.js files
+                entryFileNames: "scripts/module.js", 
                 format: "cjs",
                 dir: "dist",
             },
@@ -21,6 +23,7 @@ export default defineConfig({
     plugins: [        
         copy({
             targets: [
+                //If you add folders, such as src/templates, etc, add them here
                 { src: "src/module.json", dest: "dist" },
                 { src: "src/packs", dest: "dist" },
                 { src: "src/styles", dest: "dist" },

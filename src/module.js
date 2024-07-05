@@ -7,4 +7,5 @@ Hooks.once("init", async () => {
 
 Hooks.once('ready', async () => {
     //Do Ready Stuff
+    //Test
 });

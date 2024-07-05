@@ -6,7 +6,8 @@
   "private": false,
   "scripts": {
     "build": "vite build",
-    "dev-build": "vite build --config vite.config.dev.js"
+    "dev-build": "vite build --config vite.config.dev.js",
+    "watch": "vite build --config vite.config.dev.js --watch"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^26.0.1",

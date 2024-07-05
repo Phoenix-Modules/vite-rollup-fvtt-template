@@ -46,7 +46,7 @@
     "modules/my-module-name/assets/images",
     "modules/my-module-name/assets/sounds"
   ],
-  "esmodules": ["scripts/module.js"],
+  "esmodules": ["module.js"],
   "version": "#{VERSION}#",
   "compatibility": {
     "minimum": "11",
